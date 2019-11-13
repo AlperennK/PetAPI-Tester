@@ -1,0 +1,294 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Generate new pet and update usingID",
+        "description": "",
+        "id": "generate-\u0026-update-a-pet;generate-new-pet-and-update-usingid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4022876200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I create a pet",
+            "match": {
+              "location": "PetSteps.iCreateAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 563843800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I check newly created pet",
+            "match": {
+              "location": "PetSteps.iCheckNewlyCreatedPet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 436023300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I update my pet",
+            "match": {
+              "location": "PetSteps.iUpdateMyPet()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 428207200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I check updated pet",
+            "match": {
+              "location": "PetSteps.iCheckUpdatedPet()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "One should be able to change status of pet",
+        "description": "",
+        "id": "generate-\u0026-update-a-pet;one-should-be-able-to-change-status-of-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 443833300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I create a pet called Garfield",
+            "match": {
+              "location": "PetSteps.iCreateGarfield()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 451643600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I change status to \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 20
+                }
+              ],
+              "location": "PetSteps.iUpdateStatusOfPetAsA(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 413313200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should get \"sold\" for the pet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 14
+                }
+              ],
+              "location": "PetSteps.iShouldSeeNewlyCreatedPetSStatusIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Generate \u0026 Update a pet",
+    "description": "",
+    "id": "generate-\u0026-update-a-pet",
+    "keyword": "Feature",
+    "uri": "features/NewPet.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Generating new pet with Status",
+        "description": "",
+        "id": "create-pet-with-all-possible-status-types;generating-new-pet-with-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 452387800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I generate a new peth with \"available\" status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 28
+                }
+              ],
+              "location": "PossibleStatusSteps.i_generate_a_new_peth_with_status(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 433692000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I check newly created pet\u0027s status is \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 39
+                }
+              ],
+              "location": "PossibleStatusSteps.i_check_newly_created_pet_s_status_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Generating new pet with Status",
+        "description": "",
+        "id": "create-pet-with-all-possible-status-types;generating-new-pet-with-status;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 424639400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I generate a new peth with \"pending\" status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pending",
+                  "offset": 28
+                }
+              ],
+              "location": "PossibleStatusSteps.i_generate_a_new_peth_with_status(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 414638300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I check newly created pet\u0027s status is \"pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pending",
+                  "offset": 39
+                }
+              ],
+              "location": "PossibleStatusSteps.i_check_newly_created_pet_s_status_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Generating new pet with Status",
+        "description": "",
+        "id": "create-pet-with-all-possible-status-types;generating-new-pet-with-status;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 428590400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I generate a new peth with \"sold\" status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 28
+                }
+              ],
+              "location": "PossibleStatusSteps.i_generate_a_new_peth_with_status(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 411969600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I check newly created pet\u0027s status is \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 39
+                }
+              ],
+              "location": "PossibleStatusSteps.i_check_newly_created_pet_s_status_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create pet with all possible status types",
+    "description": "",
+    "id": "create-pet-with-all-possible-status-types",
+    "keyword": "Feature",
+    "uri": "features/PossibleStatusTypes.feature"
+  }
+]
