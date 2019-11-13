@@ -17,15 +17,15 @@ public class PetRestClient {
     }
 
     protected boolean postName(String url, String petName){
-        return given().log().all().accept("application/xml").contentType(" application/x-www-form-urlencoded").formParam("name", petName).when().post(url).getStatusCode() == HttpStatus.SC_OK;
+        return given().log().all().accept("application/json").contentType(" application/x-www-form-urlencoded").formParam("name", petName).when().post(url).getStatusCode() == HttpStatus.SC_OK;
     }
 
     protected boolean postStatus(String url, String petStatus){
-        return given().log().all().accept("application/xml").contentType(" application/x-www-form-urlencoded").formParam("status",petStatus ).when().post(url).getStatusCode() == HttpStatus.SC_OK;
+        return given().log().all().accept("application/json").contentType(" application/x-www-form-urlencoded").formParam("status",petStatus ).when().post(url).getStatusCode() == HttpStatus.SC_OK;
     }
 
     protected boolean postBothNameAndStatus(String url, String petName, String petStatus){
-        return given().accept("application/xml").contentType(" application/x-www-form-urlencoded").formParam("name", petName).formParam("status",petStatus ).when().post(url).getStatusCode() == HttpStatus.SC_OK;
+        return given().accept("application/json").contentType(" application/x-www-form-urlencoded").formParam("name", petName).formParam("status",petStatus ).when().post(url).getStatusCode() == HttpStatus.SC_OK;
 
     }
 
