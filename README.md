@@ -24,9 +24,13 @@ One can easily add  new feature file and add implement steps accordingly by foll
 
 
 To be improved:
+
 -Generate a response class for 404 status messages, check error types
+
 -Implement delete pet feature, steps, helper functions
+
 -Implement dockerfile
+
 -Implement logging option, logging file etc.
 
 
