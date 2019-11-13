@@ -1,5 +1,8 @@
 package com.epampets.core.client;
 
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
 import org.apache.http.HttpStatus;
 import com.epampets.domain.entity.Pet;
 import com.epampets.domain.response.ResponsePet;
@@ -10,10 +13,13 @@ import static io.restassured.RestAssured.given;
 
 public class PetRestClient {
     public PetRestClient(){
-        
+//        RequestSpecification requestSpecification= new RequestSpecBuilder().addHeader("Content-Type", "application/json").build();
+//        RestAssured.requestSpecification=requestSpecification;
+
+
     }
     protected boolean post(String url, Object body){
-        return given().log().all().contentType("application/json").body(body).when().post(url).getStatusCode() == HttpStatus.SC_OK;
+        return given().log().all().accept("application/json").contentType("application/json").body(body).when().post(url).getStatusCode() == HttpStatus.SC_OK;
     }
 
     protected boolean postName(String url, String petName){
@@ -34,11 +40,11 @@ public class PetRestClient {
     }
 
     protected ResponsePet get(String url){
-        return given().contentType("application/json").when().get(url).getBody().as(ResponsePet.class);
+        return given().accept("application/json").contentType("application/json").when().get(url).getBody().as(ResponsePet.class);
     }
 
     protected boolean put(String url, Pet pet){
-        return given().contentType("application/json").body(pet).when().put(url).getStatusCode() ==  HttpStatus.SC_OK;
+        return given().accept("application/json").contentType("application/json").body(pet).when().put(url).getStatusCode() ==  HttpStatus.SC_OK;
     }
 
     protected List<Pet> getList(String url){
