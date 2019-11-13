@@ -43,4 +43,4 @@ To be improved:
 
 -Run allure serve command in cli
 
-- https://docs.qameta.io/allure/
+- allure serve target/surefire-reports/
