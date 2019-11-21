@@ -1,0 +1,17 @@
+com\epampets\core\configuration\ConfigParser.class
+com\epampets\domain\client\PetClient.class
+com\epampets\domain\utils\NumberGenerateHelper.class
+com\epampets\steps\EpamSteps.class
+com\epampets\domain\builder\PetBuilder.class
+com\epampets\steps\PossibleStatusSteps.class
+com\epampets\domain\helper\PetService.class
+com\epampets\domain\entity\Pet.class
+com\epampets\domain\response\ResponsePet$Tags.class
+com\epampets\domain\response\ResponsePet.class
+com\epampets\domain\entity\Pet$Tags.class
+com\epampets\domain\entity\PetStatus.class
+com\epampets\domain\response\ResponsePet$Category.class
+com\epampets\domain\builder\PetBuilder$1.class
+com\epampets\core\client\PetRestClient.class
+com\epampets\domain\entity\Pet$Category.class
+com\epampets\RunCukeTest.class

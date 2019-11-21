@@ -12,49 +12,49 @@
         "steps": [
           {
             "result": {
-              "duration": 4022876200,
+              "duration": 2666554200,
               "status": "passed"
             },
             "line": 3,
             "name": "I create a pet",
             "match": {
-              "location": "PetSteps.iCreateAPet()"
+              "location": "EpamSteps.iCreateAPet()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 563843800,
+              "duration": 525975400,
               "status": "passed"
             },
             "line": 4,
             "name": "I check newly created pet",
             "match": {
-              "location": "PetSteps.iCheckNewlyCreatedPet()"
+              "location": "EpamSteps.iCheckNewlyCreatedPet()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 436023300,
+              "duration": 425872600,
               "status": "passed"
             },
             "line": 5,
             "name": "I update my pet",
             "match": {
-              "location": "PetSteps.iUpdateMyPet()"
+              "location": "EpamSteps.iUpdateMyPet()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 428207200,
+              "duration": 428598800,
               "status": "passed"
             },
             "line": 6,
             "name": "I check updated pet",
             "match": {
-              "location": "PetSteps.iCheckUpdatedPet()"
+              "location": "EpamSteps.iCheckUpdatedPet()"
             },
             "keyword": "Then "
           }
@@ -70,19 +70,19 @@
         "steps": [
           {
             "result": {
-              "duration": 443833300,
+              "duration": 423031100,
               "status": "passed"
             },
             "line": 9,
             "name": "I create a pet called Garfield",
             "match": {
-              "location": "PetSteps.iCreateGarfield()"
+              "location": "EpamSteps.iCreateGarfield()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 451643600,
+              "duration": 431891100,
               "status": "passed"
             },
             "line": 10,
@@ -94,13 +94,13 @@
                   "offset": 20
                 }
               ],
-              "location": "PetSteps.iUpdateStatusOfPetAsA(String)"
+              "location": "EpamSteps.iUpdateStatusOfPetAsA(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 413313200,
+              "duration": 430376300,
               "status": "passed"
             },
             "line": 11,
@@ -112,8 +112,45 @@
                   "offset": 14
                 }
               ],
-              "location": "PetSteps.iShouldSeeNewlyCreatedPetSStatusIs(String)"
+              "location": "EpamSteps.iShouldSeeNewlyCreatedPetSStatusIs(String)"
             },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "I should be able to delete my pet",
+        "description": "",
+        "id": "generate-\u0026-update-a-pet;i-should-be-able-to-delete-my-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I have a pet called Garfield",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I delete the pet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I should\u0027t see the Garfield in pet list",
+            "match": {},
             "keyword": "Then "
           }
         ]
@@ -138,7 +175,7 @@
         "steps": [
           {
             "result": {
-              "duration": 452387800,
+              "duration": 470613300,
               "status": "passed"
             },
             "line": 4,
@@ -159,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 433692000,
+              "duration": 426815100,
               "status": "passed"
             },
             "line": 5,
@@ -190,7 +227,7 @@
         "steps": [
           {
             "result": {
-              "duration": 424639400,
+              "duration": 434610800,
               "status": "passed"
             },
             "line": 4,
@@ -211,7 +248,7 @@
           },
           {
             "result": {
-              "duration": 414638300,
+              "duration": 427570000,
               "status": "passed"
             },
             "line": 5,
@@ -242,7 +279,7 @@
         "steps": [
           {
             "result": {
-              "duration": 428590400,
+              "duration": 421403200,
               "status": "passed"
             },
             "line": 4,
@@ -263,7 +300,7 @@
           },
           {
             "result": {
-              "duration": 411969600,
+              "duration": 434060500,
               "status": "passed"
             },
             "line": 5,
