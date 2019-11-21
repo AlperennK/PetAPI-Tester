@@ -10,3 +10,8 @@ Feature: Generate & Update a pet
         When I change status to "sold"
         Then I should get "sold" for the pet
 
+    Scenario: I should be able to delete my pet
+        Given I have a pet called Garfield
+        When I delete the pet
+        Then I should't see the Garfield in pet list
+

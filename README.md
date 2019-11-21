@@ -11,8 +11,7 @@ I tested the behaviour of API. Scenarios as such is tested:
 
 
 
-
-Scenarios are under features folder. 
+Possible scenarios are written under features folder. 
 
 To add new features check out 10 minute tutorial
 https://cucumber.io/docs/guides/10-minute-tutorial/
@@ -24,18 +23,12 @@ One can easily add  new feature file and add implement steps accordingly by foll
 
 
 To be improved:
-
 -Generate a response class for 404 status messages, check error types
-
 -Implement delete pet feature, steps, helper functions
-
 -Implement dockerfile
-
 -Implement logging option, logging file etc.
 
-
-
-# How to run:
+How to run:
 
 -Pull the repo
 
